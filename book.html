@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Viewer - SFF</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f8ff;
+    }
+    header {
+      background-color: #2b4f81;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: calc(100vh - 80px);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reading: Book Viewer</h1>
+  </header>
+  <iframe id="pdfFrame" src=""></iframe>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get('file') || 'sample.pdf'; // Default fallback
+    document.getElementById('pdfFrame').src = file;
+  </script>
+</body>
+</html>
+    

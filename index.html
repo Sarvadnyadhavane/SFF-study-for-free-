@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SFF - Study For Free</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f5f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #2b4f81;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin-left: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 2rem;
+    }
+    .book-section {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .book-section h2 {
+      margin-top: 0;
+    }
+    .book-list li {
+      margin-bottom: 0.75rem;
+    }
+    .book-list a {
+      color: #2b4f81;
+      text-decoration: none;
+    }
+    .book-list a:hover {
+      text-decoration: underline;
+    }
+    .contact-form {
+      background-color: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 500px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background-color: #2b4f81;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background-color: #1f3b60;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SFF - Study For Free</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="home" class="book-section">
+      <h2>Read Free Books</h2>
+      <p>Welcome to SFF - your destination for reading educational books for free. Here are a few sample books:</p>
+      <ul class="book-list">
+        <li><strong>Mathematics for Beginners</strong> - <a href="book.html?file=math.pdf" target="_blank">Read Now</a></li>
+        <li><strong>Introduction to Physics</strong> - <a href="book.html?file=physics.pdf" target="_blank">Read Now</a></li>
+        <li><strong>Learn English Grammar</strong> - <a href="book.html?file=english.pdf" target="_blank">Read Now</a></li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact-form">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
+    
